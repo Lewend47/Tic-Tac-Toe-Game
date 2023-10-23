@@ -20,7 +20,7 @@ function stopTheGame() {
     BOARD.innerHTML = '';
     BOARD.classList = '';
     document.getElementsByClassName('current_player')[0].innerHTML = '';
-    document.getElementById('restart').style display = 'block';
+    document.getElementById('restart').style = 'block';
     document.getElementsByClassName('game_over')[0].style.display = 'block';
 }
 
@@ -193,5 +193,3 @@ function playEndSound(outcome) {
         lastWinner = 'O';
     }
 }
-
-loadTheGame();
